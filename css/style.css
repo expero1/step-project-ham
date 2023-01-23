@@ -77,9 +77,9 @@ body {
 .load-more-btn:before {
   content: url(../image/icon/plus-icon.svg);
   position: absolute;
-  left: 23px;
   top: 50%;
   transform: translateY(-50%);
+  left: 23px;
 }
 
 .main-highlight-color {
@@ -261,7 +261,6 @@ header {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-content: center;
   align-items: center;
   gap: 32px;
   width: 25%;
@@ -309,7 +308,6 @@ header {
 .tab-label {
   display: flex;
   justify-content: center;
-  align-content: stretch;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -447,7 +445,6 @@ header {
   left: 50%;
   transform: translateX(-50%);
   bottom: 212px;
-  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #18cfab;
@@ -464,12 +461,6 @@ header {
   bottom: 188px;
   text-align: center;
   font-size: 13px;
-}
-
-.clients-tab__image-wrapper {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .clients-tab__image {
