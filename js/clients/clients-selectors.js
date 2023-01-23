@@ -33,28 +33,39 @@ export const getActiveCarouselLink = () => {
     ) ?? clientsCarousel.querySelector(`.${CAROUSLE_ITEM_CLASS_NAME}`)
   );
 };
-
-export const getNextSiblingElement = (currentElement, className) => {
-  let allSiblings = Array.from(currentElement.parentElement.children);
-  if (!currentElement) return allSiblings[0];
-  if (className)
-    allSiblings = allSiblings.filter((element) => {
-      element.classList.contains(className);
-    });
-  const currentElementIndex = allSiblings.indexOf(currentElement);
-  return currentElementIndex >= allSiblings.length - 1
-    ? allSiblings[0]
-    : allSiblings[currentElementIndex + 1];
+export const getNextSiblingElement2 = (currentElement) => {
+  let nextElement = currentElement.nextElementSibling;
+  return nextElement ?? currentElement.parentElement.children[0];
 };
-export const getPrevSiblingElement = (currentElement, className) => {
-  let allSiblings = Array.from(currentElement.parentElement.children);
-  if (!currentElement) return allSiblings[allSiblings.length - 1];
-  if (className)
-    allSiblings = allSiblings.filter((element) => {
-      element.classList.contains(className);
-    });
-  const currentElementIndex = allSiblings.indexOf(currentElement);
-  return currentElementIndex <= 0
-    ? allSiblings[allSiblings.length - 1]
-    : allSiblings[currentElementIndex - 1];
+// export const getNextSiblingElement = (currentElement, className) => {
+//   let allSiblings = Array.from(currentElement.parentElement.children);
+//   if (!currentElement) return allSiblings[0];
+//   if (className)
+//     allSiblings = allSiblings.filter((element) => {
+//       element.classList.contains(className);
+//     });
+//   const currentElementIndex = allSiblings.indexOf(currentElement);
+//   return currentElementIndex >= allSiblings.length - 1
+//     ? allSiblings[0]
+//     : allSiblings[currentElementIndex + 1];
+// };
+export const getPrevSiblingElement2 = (currentElement) => {
+  let prevElement = currentElement.previousElementSibling;
+  if (!prevElement) {
+    const index = currentElement.parentElement.children.length - 1;
+    prevElement = currentElement.parentElement.children[index];
+  }
+  return prevElement;
 };
+// export const getPrevSiblingElement = (currentElement, className) => {
+//   let allSiblings = Array.from(currentElement.parentElement.children);
+//   if (!currentElement) return allSiblings[allSiblings.length - 1];
+//   if (className)
+//     allSiblings = allSiblings.filter((element) => {
+//       element.classList.contains(className);
+//     });
+//   const currentElementIndex = allSiblings.indexOf(currentElement);
+//   return currentElementIndex <= 0
+//     ? allSiblings[allSiblings.length - 1]
+//     : allSiblings[currentElementIndex - 1];
+// };
