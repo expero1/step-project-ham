@@ -66,10 +66,16 @@ export const createWorkItem = (
   description
 ) => {
   return `<div class="work-item" data-filter="${filter}">
-    <img class="work-item__image" src="${imageUrl}" />
+    <img class="work-item__image" src="${encodeURI(
+      imageUrl
+    )}" alt="${description} ${header}" />
     <div class="work-item__description">
-      <a class="work-item__link work-item__main-link" href="${mainLink}"></a>
-      <a class="work-item__link work-item__alt-link" href="${altLink}"></a>
+      <a class="work-item__link work-item__main-link" href="${encodeURI(
+        mainLink
+      )}"></a>
+      <a class="work-item__link work-item__alt-link" href="${encodeURI(
+        altLink
+      )}"></a>
       <h3 class="work-item__header">${header}</h3>
       <p class="work-item__par">${description}</p>
     </div>`;
