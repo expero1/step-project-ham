@@ -119,9 +119,7 @@
 
 .slider-btn {
   $slider-size: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  @include centered-vertical-absolute-positioned();
   width: $slider-size;
   height: $slider-size;
   background: transparent url(../image/icon/arrow.svg) center no-repeat;

@@ -10,6 +10,11 @@
   left: 50%;
   transform: translateX(-50%);
 }
+@mixin centered-vertical-absolute-positioned() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 @mixin horizontal-delimiter($delimiter-content, $padding-left, $padding-right) {
   content: $delimiter-content;
   padding-left: $padding-left;

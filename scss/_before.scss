@@ -86,10 +86,8 @@ body {
   padding-left: 36px;
   &:before {
     content: url(../image/icon/plus-icon.svg);
-    position: absolute;
+    @include centered-vertical-absolute-positioned();
     left: 23px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 .main-highlight-color {
