@@ -43,8 +43,7 @@ header {
 }
 .header-menu__item {
   border-bottom: 2px solid transparent;
-  transition: color $transition-color-time,
-    border-color $transition-border-color-time;
+  transition: color 0.5s, border-color 0.5s;
   &:hover {
     border-bottom: 2px solid $accent-color;
     cursor: pointer;

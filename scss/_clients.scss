@@ -90,28 +90,28 @@
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  transition: left $transition-left-time;
+  transition: left 1s;
 }
 .carousel-link {
-  transition: translate $transition-translate-time;
+  transition: translate 0.5s;
   &:hover,
   &.active {
     cursor: pointer;
     .carousel-preview__wrapper {
       position: relative;
       top: -10px;
-      transition: translate $transition-translate-time;
+      transition: translate 0.5s;
     }
   }
 }
 .carousel-preview__wrapper {
   width: 70px;
   height: 70px;
-  transition: top $transition-top-time;
+  transition: top 0.5s;
   &.active {
     position: relative;
     top: -10px;
-    transition: translate $transition-translate-time;
+    transition: translate 0.5s;
   }
 }
 .carousel-preview-image {
@@ -133,9 +133,7 @@
   background: transparent url(../image/icon/arrow.svg) center no-repeat;
   border: 1px solid #bbbbbb;
   cursor: pointer;
-  transition: border-color $transition-border-color-time,
-    background-color $transition-background-color-time,
-    background-image $transition-background-image-time;
+  transition: border-color 0.5s, background-color 0.5s, background-image 0.5s;
   &:hover {
     border-color: $accent-color;
     background-color: $accent-color;

@@ -37,7 +37,7 @@
   padding: $padding-top $side-padding $padding-bottom $side-padding;
   font-size: 14px;
   color: $section-text-color;
-  transition: color $transition-color-time, border-color $transition-border-time;
+  transition: color 0.5s, border-color 0.1s;
   &:hover,
   &.active {
     position: relative;
@@ -60,7 +60,7 @@
   margin-bottom: 70px;
   overflow: hidden;
   max-height: 0;
-  transition: max-height $transition-max-height-time;
+  transition: max-height 2s;
 }
 .work-item {
   position: relative;
@@ -89,7 +89,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  transition: top $transition-top-time, transform $transition-transform-time;
+  transition: top 0.5s, transform 0.5s;
   .work-item__link {
     position: relative;
     display: inline-block;
@@ -99,8 +99,7 @@
     aspect-ratio: 1;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-color $transition-background-color-time,
-      background-image $transition-background-image-time;
+    transition: background-color 0.5s, background-image 0.5s;
     &:hover {
       background-color: $accent-color;
     }

@@ -27,10 +27,7 @@
   background-color: $tab-bg-color;
   border: 1px solid #edefef;
   cursor: pointer;
-  transition: color $transition-color-time,
-    border-color $transition-border-color-time,
-    background-color $transition-background-color-time,
-    opacity $transition-opacity-time;
+  transition: color 0.5s, border-color 0.5s, background-color 0.5s, opacity 1s;
   &:after {
     $block-size: 8px;
     content: "";
