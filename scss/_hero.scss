@@ -1,0 +1,39 @@
+/* hero section */
+
+.hero-section {
+  background: rgba(94, 93, 88, 0.6) url("../image/hero/section-hero.jpg") left
+    top / cover no-repeat fixed;
+  background-blend-mode: screen;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-color;
+  margin-bottom: 8px;
+  padding-top: 379px;
+  padding-bottom: 243px;
+  // margin-top: 5px;
+
+  .hero-header {
+    @include section-header(35px);
+    margin-bottom: 14px;
+  }
+  .hero-subheader {
+    font-size: 78px;
+    margin: 0 0 14px 0;
+  }
+  .hero-action-call {
+    margin: 0 0 132px 0;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  .hero-btn {
+    height: 60px;
+    width: 166px;
+    margin-right: 24px;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}

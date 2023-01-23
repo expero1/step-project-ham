@@ -1,0 +1,135 @@
+/* works section */
+.work-section {
+  padding-top: 97px;
+  padding-bottom: 98px;
+  background-color: $works-section-background-color;
+}
+.work-section-header {
+  margin-bottom: 61px;
+  &:after {
+    line-height: 36px;
+  }
+}
+.work-menu__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 71px;
+  padding: 0;
+}
+.work-menu__item {
+  text-align: center;
+}
+.work-menu__link {
+  $border-width: 1px;
+  $side-padding: 16px;
+  $padding-top: 20px;
+  $padding-bottom: $padding-top;
+  min-width: 75px;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  border: $border-width solid gray;
+  margin-right: -$border-width;
+  border-collapse: collapse;
+  padding: $padding-top $side-padding $padding-bottom $side-padding;
+  font-size: 14px;
+  color: $section-text-color;
+  transition: color $transition-color-time, border-color $transition-border-time;
+  &:hover,
+  &.active {
+    position: relative;
+    $border-width-hover: 2px;
+    $padding-top-hover: $padding-top - ($border-width-hover - $border-width);
+    $padding-bottom-hover: $padding-bottom -
+      ($border-width-hover - $border-width);
+    $padding-side-hover: $side-padding - ($border-width-hover - $border-width);
+    padding: $padding-top-hover $padding-side-hover $padding-bottom-hover
+      $padding-side-hover;
+    border: $border-width-hover solid $accent-color;
+    z-index: 1;
+    color: $accent-color;
+  }
+}
+.work-item__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 70px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height $transition-max-height-time;
+}
+.work-item {
+  position: relative;
+  overflow: hidden;
+  &:hover .work-item__description,
+  &:focus-within .work-item__description {
+    top: 0px;
+  }
+}
+.work-item__description:focus-within {
+  transition: none;
+}
+.work-item__image {
+  display: block;
+  object-fit: cover;
+  width: 285px;
+  height: 207px;
+}
+.work-item__description {
+  position: absolute;
+  height: 100%;
+  padding: 43px 0 34px 9px;
+  // padding-top: 46px;
+  // padding-bottom: 34px;
+  // padding-left: 9px;
+  background-color: $works-section-background-color;
+  border-top: 2px solid $accent-color;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: top $transition-top-time, transform $transition-transform-time;
+  .work-item__link {
+    position: relative;
+    display: inline-block;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    height: 40px;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color $transition-background-color-time,
+      background-image $transition-background-image-time;
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+  .work-item__main-link {
+    background-image: url("../image/icon/link-icon.svg");
+    &:hover,
+    &:active {
+      background-image: url("../image/icon/link-icon-hover.svg");
+    }
+  }
+  .work-item__alt-link {
+    background-image: url("../image/icon/rect-icon.svg");
+    &:hover {
+      background-image: url("../image/icon/rect-icon-hover.svg");
+    }
+  }
+  .work-item__header {
+    @include section-header(14px);
+    margin-top: 33px;
+  }
+  .work-item__par {
+    text-transform: capitalize;
+    color: #8a8a8a;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}

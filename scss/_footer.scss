@@ -1,0 +1,15 @@
+/*footer section*/
+
+footer {
+  background-color: $footer-section-background-color;
+}
+.copy {
+  text-align: center;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  font-size: 14px;
+  font-weight: 300;
+  a {
+    color: $accent-color;
+  }
+}

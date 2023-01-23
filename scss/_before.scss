@@ -1,0 +1,161 @@
+/* common properties (_before.scss)*/
+
+///////// TEMPORARY REMOVE IN PRODUCTION
+$temporary-wrapper-width: 1920px;
+// $temporary-wrapper-width: 4000px;
+
+.temporary-wrapper {
+  margin: 0 auto;
+  // width: $temporary-wrapper-width;
+  width: 100%;
+  box-sizing: content-box;
+  // border: 1px solid red;
+  border: 0px;
+}
+
+.temporary-gallery {
+  height: 1349px;
+}
+/// *************************************8
+
+body {
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+
+  /* **** DEVELOP, REMOVE IN PRODUCTION*/
+  width: $temporary-wrapper-width;
+  margin: 0 auto;
+  /* **** DEVELOP, REMOVE IN PRODUCTION*/
+  color: $main-color;
+}
+
+.wrapper {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.btn {
+  min-height: 62px;
+  min-width: 165px;
+  padding: 0;
+  border-width: 0;
+  border-radius: 5px;
+  color: $main-color;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background $transition-color-time,
+    transform $transition-transform-time, box-shadow $transition-box-shadow-time;
+  cursor: pointer;
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active {
+    background-color: rgba($color: grey, $alpha: 0.5);
+    cursor: default;
+  }
+  &:active {
+    position: relative;
+    transform: translateY(-5px);
+  }
+}
+.action-btn {
+  background-color: $accent-color;
+
+  &:active,
+  &:hover {
+    background-color: $accent-color-active;
+  }
+}
+.shadow-btn {
+  -webkit-box-shadow: 0px -5px 0px 0px $main-color;
+  -moz-box-shadow: 0px -5px 0px 0px $main-color;
+  box-shadow: 0px -5px 0px 0px $main-color;
+  // transition: box-shadow 0.5s;
+  &:active {
+    box-shadow: none;
+  }
+}
+.alternate-btn {
+  background-color: $alt-accent-color;
+  &:active,
+  &:hover {
+    background-color: $alt-accent-color-active;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.load-more-btn {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  font-size: 14px;
+  padding-left: 36px;
+  &:before {
+    content: url(../image/icon/plus-icon.svg);
+    position: absolute;
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.rotate:before {
+    animation: rotate 2s 1s infinite;
+    top: 37%;
+    transform-origin: 8px 9px;
+  }
+}
+.main-highlight-color {
+  color: $accent-color;
+}
+
+.section-margin-top {
+  margin-top: 91px;
+}
+.section-header {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: 400;
+  color: $section-header-color;
+  &:after {
+    content: url(../image/icon/brake-line.svg);
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    line-height: 44px;
+  }
+}
+.normal-font-weight {
+  font-weight: 400;
+}
+.bold-font-weight {
+  font-weight: 800;
+}
+.semi-bold-font-weight {
+  font-weight: 700;
+}
+.main-color {
+  color: $main-color;
+}
+.loader {
+  width: 30px;
+  display: block;
+}
+
+.load-spinner {
+  display: none;
+  background: url("../image/loader/loader.svg") center / cover no-repeat;
+  margin: 20px auto;
+  width: 60px;
+  aspect-ratio: 1;
+}
+.delimiter {
+  &:after {
+    @include horizontal-delimiter("|", 4px, 4px);
+  }
+}

@@ -1,0 +1,17 @@
+@mixin section-header($font-size) {
+  font-size: $font-size;
+  margin: 0;
+  text-transform: uppercase;
+  color: $accent-color;
+  text-align: center;
+}
+@mixin centered-absolute-positioned() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin horizontal-delimiter($delimiter-content, $padding-left, $padding-right) {
+  content: $delimiter-content;
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}

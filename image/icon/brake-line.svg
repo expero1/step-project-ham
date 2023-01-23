@@ -1,0 +1,14 @@
+<svg height='13px' width='86px' xmlns="http://www.w3.org/2000/svg">
+	<path
+		fill-rule="evenodd"
+		clip-rule="evenodd"
+		d="M0,2 v1 h75 v1 H0"
+		fill="#18cfab"
+	/>
+	<path
+		fill-rule="evenodd"
+		clip-rule="evenodd"
+		d="M11, 8 v-1 h75 v1 H0"
+		fill="#18cfab"
+	 />
+</svg>

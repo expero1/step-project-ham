@@ -1,0 +1,23 @@
+.purchase-section {
+  // margin-top: 31px;
+  padding: 125px 0 126px 0;
+  text-align: center;
+  background: #000 url("../image/purchase/section-purchase.jpg") center / cover
+    no-repeat;
+  // background-image: url("../image/purchase/section-purchase-cut.jpg"),
+  //   url("../image/purchase/section-purchase-cut.jpg");
+  // background-blend-mode: normal, lighten;
+  // background-position-y: 0, 32px;
+  .purchase-header {
+    @include section-header(40px);
+    margin-bottom: 20px;
+  }
+  .purchase-content {
+    // margin-bottom: 77px;
+    color: $main-color;
+    font-size: 16px;
+  }
+  .purchase-btn {
+    margin-top: 61px;
+  }
+}
