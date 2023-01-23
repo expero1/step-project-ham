@@ -7,10 +7,10 @@ import {
 } from "./works-selectors.js";
 const showAllItemsFilter = "all";
 let currentFilter = showAllItemsFilter;
+
 export const filterWorkItems = (filter = showAllItemsFilter) => {
-  // const workItems = selectWorkItems();
   Array.from(workItems).forEach((workItem) => {
-    const currentItemFilter = workItem.dataset.filter.split(",");
+    const currentItemFilter = workItem.dataset.filter;
     currentItemFilter.forEach((filter) => filter.trim());
     currentFilter === showAllItemsFilter || currentItemFilter.includes(filter)
       ? workItem.classList.remove("hide")

@@ -13,9 +13,6 @@ export async function getImages({
   per_page = 10,
   delay = 0,
 }) {
-  //   let imageCounter = 1;
-  //   const total = 0;
-
   const filteredImages = worksImages.filter(
     (workItemData) => workItemData.filter === filter || filter === null
   );

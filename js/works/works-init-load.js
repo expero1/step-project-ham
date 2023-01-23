@@ -1,6 +1,4 @@
 import { getImages } from "./works-load-images.js";
-import { createWorkItem } from "./create-work-item.js";
-import { workItemContainer } from "./works-selectors.js";
 import { addImagesToPage } from "./works-add-to-page.js";
 import { worksState } from "./works-state.js";
 export function initialLoadImages() {
@@ -14,4 +12,3 @@ export function initialLoadImages() {
     worksState.currentPage++;
   });
 }
-// initialLoadImages();

@@ -12,7 +12,6 @@ const loadMoreImages = async (event) => {
   const currentPage = worksState.currentPage;
   const currentFilter = getActiveWorkMenuItem().dataset.filter;
   workLoadMoreBtn.disabled = "disabled";
-  // workLoadMoreBtn.classList.add("rotate");
   loadSpinner.classList.add("show");
   const images = await getImages({
     filter: null,
@@ -24,7 +23,6 @@ const loadMoreImages = async (event) => {
   filterWorkItems(currentFilter);
   worksState.currentPage++;
   workLoadMoreBtn.disabled = "";
-  // workLoadMoreBtn.classList.remove("rotate");
   loadSpinner.classList.remove("show");
   if (worksState.currentPage > worksState.maxPageToShow)
     workLoadMoreBtn.classList.add("hide");
