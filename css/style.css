@@ -227,6 +227,7 @@ header {
   height: auto;
   vertical-align: sub;
 }
+
 /* hero section */
 .hero-section {
   background: rgba(94, 93, 88, 0.6) url("../image/hero/section-hero.jpg") left top/cover no-repeat fixed;

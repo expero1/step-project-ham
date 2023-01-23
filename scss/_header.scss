@@ -4,7 +4,6 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  // top: 5px;
   background: $header-section-background-color;
 }
 .header-section {
@@ -59,19 +58,12 @@ header {
   }
 }
 .search {
-  // justify-self: end;
   text-align: end;
   width: 18px;
 
-  &:hover .search-icon {
-    // width: 25px;
-    // cursor: pointer;
-  }
   .search-icon {
     width: 21px;
     height: auto;
     vertical-align: sub;
-    &:hover {
-    }
   }
 }
