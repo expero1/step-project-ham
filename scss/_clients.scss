@@ -35,7 +35,7 @@
 .clients-tab__name {
   @include centered-absolute-positioned();
   bottom: 212px;
-  font-size: 16px;
+  //font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: $accent-color;
