@@ -33,7 +33,7 @@ export const getActiveCarouselLink = () => {
     ) ?? clientsCarousel.querySelector(`.${CAROUSLE_ITEM_CLASS_NAME}`)
   );
 };
-export const getNextSiblingElement2 = (currentElement) => {
+export const getNextSiblingElement = (currentElement) => {
   let nextElement = currentElement.nextElementSibling;
   return nextElement ?? currentElement.parentElement.children[0];
 };
@@ -49,7 +49,7 @@ export const getNextSiblingElement2 = (currentElement) => {
 //     ? allSiblings[0]
 //     : allSiblings[currentElementIndex + 1];
 // };
-export const getPrevSiblingElement2 = (currentElement) => {
+export const getPrevSiblingElement = (currentElement) => {
   let prevElement = currentElement.previousElementSibling;
   if (!prevElement) {
     const index = currentElement.parentElement.children.length - 1;

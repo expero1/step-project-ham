@@ -1,9 +1,8 @@
 import { moveElementTo, showClient } from "./clients-position-calc.js";
 import {
   getActiveCarouselLink,
-  getNextSiblingElement2,
+  getNextSiblingElement,
   getPrevSiblingElement,
-  getPrevSiblingElement2,
 } from "./clients-selectors.js";
 
 import { CAROUSLE_ITEM_CLASS_NAME } from "./clients-vars.js";
@@ -21,13 +20,13 @@ export const applyAction = (action, target) => {
       break;
     case PREV_CLIENT_ACTION:
       activeCarouselLink = getActiveCarouselLink();
-      const prevClient = getPrevSiblingElement2(activeCarouselLink);
+      const prevClient = getPrevSiblingElement(activeCarouselLink);
       showClient(prevClient);
       moveElementTo(prevClient);
       break;
     case NEXT_CLIENT_ACTION:
       activeCarouselLink = getActiveCarouselLink();
-      const nextClient = getNextSiblingElement2(activeCarouselLink);
+      const nextClient = getNextSiblingElement(activeCarouselLink);
       showClient(nextClient);
       moveElementTo(nextClient);
       break;
