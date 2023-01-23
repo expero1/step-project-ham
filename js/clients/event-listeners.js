@@ -5,7 +5,6 @@ import {
   MOVE_ELEMENT_ACTION,
   applyAction,
 } from "./clients-actions.js";
-// import { moveElementTo } from "./clients-position-calc.js";
 import { clientsCarousel } from "./clients-selectors.js";
 import {
   PREV_BTN_CLASS_NAME,
@@ -56,7 +55,6 @@ export const activateEventListeners = () => {
           if (target.closest(`.${PREV_BTN_CLASS_NAME}`)) {
             action = PREV_CLIENT_ACTION;
           } else if (target.closest(`.${NEXT_BTN_CLASS_NAME}`)) {
-            // event.preventDefault();
             action = NEXT_CLIENT_ACTION;
           } else if (target.closest(`.${CAROUSLE_ITEM_CLASS_NAME}`)) {
             action = SHOW_CLIENT_ACTION;

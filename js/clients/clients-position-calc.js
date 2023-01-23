@@ -38,11 +38,5 @@ export const showClient = (target) => {
       ? carouselLink.classList.add(ACTIVE_ITEM_CLASS_NAME)
       : carouselLink.classList.remove(ACTIVE_ITEM_CLASS_NAME);
   });
-  // const clientsTabs = clients.querySelectorAll(".clients-tab");
-  // clientsTabs.forEach((clientTab) => {
-  //   clientTab.dataset.id === clientId
-  //     ? clientTab.classList.add(ACTIVE_ITEM_CLASS_NAME)
-  //     : clientTab.classList.remove(ACTIVE_ITEM_CLASS_NAME);
-  // });
   showClientCard(clientId);
 };

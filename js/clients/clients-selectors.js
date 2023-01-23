@@ -9,11 +9,6 @@ export const clients = document.querySelector(`.${CLIENTS_SECTION_CLASS_NAME}`);
 export const clientsCarousel = clients.querySelector(
   `.${CLIENTS_CAROUSEL_CLASS_NAME}`
 );
-//const clients = document.querySelector(".clients");
-// export const carousel = document.querySelector(
-//   `.${CLIENTS_CAROUSEL_CLASS_NAME}`
-// );
-// const innerCarousel = clientsCarousel.querySelector(".carousel-inner");
 export const carouselWrapper =
   clientsCarousel.querySelector(".carousel-wrapper");
 export const clientCardContainer = clients.querySelector(".clients-tab");
