@@ -45,8 +45,9 @@ export const createClientCard = (
 	</p>
 	<p class="${CLIENTS_TAB_NAME_CLASS_NAME}">${clientName}</p>
 	<p class="${CLIENTS_TAB_PROFESSION_CLASS_NAME}">${clientProfession}</p>
-	<div class="${CLIENTS_TAB_IMAGE_WRAPPER_CLASS_NAME}"><img class="${CLIENTS_TAB_IMAGE_CLASS_NAME}" src="${encodeURI(
+	<!--<div class="${CLIENTS_TAB_IMAGE_WRAPPER_CLASS_NAME}">-->
+  <img class="${CLIENTS_TAB_IMAGE_CLASS_NAME}" src="${encodeURI(
     clientPhotoUrl
   )}"
-		alt="${clientName} ${clientProfession}" />`;
+		alt="${clientName}, ${clientProfession}" /><!--</div>-->`;
 };
