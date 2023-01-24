@@ -87,14 +87,14 @@
   transition: left 1s;
 }
 .carousel-link {
-  transition: translate 0.5s;
+  transition: top 0.5s;
   &:hover,
   &.active {
     cursor: pointer;
-    .carousel-preview__wrapper {
+    .carousel-preview-image {
       position: relative;
       top: -12px;
-      transition: translate 0.5s;
+      transition: top 0.5s;
     }
   }
 }
@@ -120,10 +120,10 @@
   width: 69px;
   height: 69px;
   transition: top 0.5s;
-  &.active {
-    position: relative;
-    top: -10px;
-  }
+  // &.active {
+  //   position: relative;
+  //   top: -10px;
+  // }
 }
 
 .slider-btn {
