@@ -10,8 +10,8 @@ let currentFilter = showAllItemsFilter;
 
 export const filterWorkItems = (filter = showAllItemsFilter) => {
   Array.from(workItems).forEach((workItem) => {
-    const currentItemFilter = workItem.dataset.filter;
-    currentItemFilter.forEach((filter) => filter.trim());
+    const currentItemFilter = workItem.dataset.filter.trim();
+    // currentItemFilter.forEach((filter) => filter);
     currentFilter === showAllItemsFilter || currentItemFilter.includes(filter)
       ? workItem.classList.remove("hide")
       : workItem.classList.add("hide");
