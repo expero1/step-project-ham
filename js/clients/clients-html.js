@@ -23,11 +23,11 @@ export const createClientPreviewCard = (
 	data-prof="${clientProfession}" 
 	data-citat = "${clientCitation}" 
 	data-photo="${encodeURI(clientPhotoUrl)}">
-	<div class="${CAROUSEL_PREVIEW_WRAPPER_CLASS_NAME}">
+	<!--<div class="${CAROUSEL_PREVIEW_WRAPPER_CLASS_NAME}">-->
 	  <img class="${CAROUSEL_PREVIEW_IMAGE_CLASS_NAME}" src="${encodeURI(
     clientPhotoUrl
   )}" alt="${clientName}, ${clientProfession}" />
-	</div>
+	<!--</div>-->
   </a>
 	`;
 };
