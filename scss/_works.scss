@@ -24,7 +24,7 @@
 }
 .work-menu__link {
   $border-width: 1px;
-  $side-padding: 16px;
+  $side-padding: 17px;
   $padding-top: 20px;
   $padding-bottom: $padding-top;
   min-width: 75px;
@@ -57,7 +57,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-bottom: 70px;
+  margin-bottom: 72px;
   overflow: hidden;
   max-height: 0;
   transition: max-height 2s;
@@ -77,7 +77,7 @@
   display: block;
   object-fit: cover;
   width: 285px;
-  height: 207px;
+  height: 206px;
 }
 .work-item__description {
   position: absolute;
