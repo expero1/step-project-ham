@@ -37,18 +37,7 @@ export const getNextSiblingElement = (currentElement) => {
   let nextElement = currentElement.nextElementSibling;
   return nextElement ?? currentElement.parentElement.children[0];
 };
-// export const getNextSiblingElement = (currentElement, className) => {
-//   let allSiblings = Array.from(currentElement.parentElement.children);
-//   if (!currentElement) return allSiblings[0];
-//   if (className)
-//     allSiblings = allSiblings.filter((element) => {
-//       element.classList.contains(className);
-//     });
-//   const currentElementIndex = allSiblings.indexOf(currentElement);
-//   return currentElementIndex >= allSiblings.length - 1
-//     ? allSiblings[0]
-//     : allSiblings[currentElementIndex + 1];
-// };
+
 export const getPrevSiblingElement = (currentElement) => {
   let prevElement = currentElement.previousElementSibling;
   if (!prevElement) {
@@ -57,15 +46,3 @@ export const getPrevSiblingElement = (currentElement) => {
   }
   return prevElement;
 };
-// export const getPrevSiblingElement = (currentElement, className) => {
-//   let allSiblings = Array.from(currentElement.parentElement.children);
-//   if (!currentElement) return allSiblings[allSiblings.length - 1];
-//   if (className)
-//     allSiblings = allSiblings.filter((element) => {
-//       element.classList.contains(className);
-//     });
-//   const currentElementIndex = allSiblings.indexOf(currentElement);
-//   return currentElementIndex <= 0
-//     ? allSiblings[allSiblings.length - 1]
-//     : allSiblings[currentElementIndex - 1];
-// };
