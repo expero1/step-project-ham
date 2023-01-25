@@ -1,17 +1,17 @@
 /* common properties (_before.scss)*/
 
 ///////// TEMPORARY REMOVE IN PRODUCTION
-$temporary-wrapper-width: 1920px;
+// $temporary-wrapper-width: 1920px;
 // $temporary-wrapper-width: 4000px;
 
-.temporary-wrapper {
-  margin: 0 auto;
-  // width: $temporary-wrapper-width;
-  width: 100%;
-  box-sizing: content-box;
-  // border: 1px solid red;
-  border: 0px;
-}
+// .temporary-wrapper {
+//   margin: 0 auto;
+//   // width: $temporary-wrapper-width;
+//   width: 100%;
+//   box-sizing: content-box;
+//   // border: 1px solid red;
+//   border: 0px;
+// }
 
 .temporary-gallery {
   height: 1349px;
@@ -22,8 +22,8 @@ body {
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
 
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
-  width: $temporary-wrapper-width;
-  margin: 0 auto;
+  // width: $temporary-wrapper-width;
+  // margin: 0 auto;
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
   color: $main-color;
 }
