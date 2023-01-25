@@ -23,11 +23,9 @@ export const createClientPreviewCard = (
 	data-prof="${clientProfession}" 
 	data-citat = "${clientCitation}" 
 	data-photo="${encodeURI(clientPhotoUrl)}">
-	<!--<div class="${CAROUSEL_PREVIEW_WRAPPER_CLASS_NAME}">-->
 	  <img class="${CAROUSEL_PREVIEW_IMAGE_CLASS_NAME}" src="${encodeURI(
     clientPhotoUrl
   )}" alt="${clientName}, ${clientProfession}" />
-	<!--</div>-->
   </a>
 	`;
 };
@@ -45,9 +43,8 @@ export const createClientCard = (
 	</p>
 	<p class="${CLIENTS_TAB_NAME_CLASS_NAME}">${clientName}</p>
 	<p class="${CLIENTS_TAB_PROFESSION_CLASS_NAME}">${clientProfession}</p>
-	<!--<div class="${CLIENTS_TAB_IMAGE_WRAPPER_CLASS_NAME}">-->
   <img class="${CLIENTS_TAB_IMAGE_CLASS_NAME}" src="${encodeURI(
     clientPhotoUrl
   )}"
-		alt="${clientName}, ${clientProfession}" /><!--</div>-->`;
+		alt="${clientName}, ${clientProfession}" />`;
 };
