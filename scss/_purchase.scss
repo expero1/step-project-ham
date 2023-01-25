@@ -3,17 +3,6 @@
   text-align: center;
   background: #000 url("../image/purchase/section-purchase.jpg") center / cover
     no-repeat;
-  // background-image: url("../image/purchase/section-purchase-cut.jpg"),
-  //   linear-gradient(
-  //     8deg,
-  //     rgba(255, 255, 255, 0.2) 0%,
-  //     rgba(255, 255, 255, 0.2) 100%
-  //   ),
-  //   url("../image/purchase/section-purchase-cut.jpg");
-  // background-color: gray;
-  // background-position: 0 5px, 0 0, 0 0;
-  // background-repeat: no-repeat;
-  // background-blend-mode: lighten;
   .purchase-header {
     @include section-header(40px);
     margin-bottom: 20px;
