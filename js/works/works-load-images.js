@@ -1,4 +1,3 @@
-// const returnedImageHash = new Map();
 import { worksImages } from "./works-data.js";
 const _delay = async (ms, message = "") => {
   return new Promise((resolve) => {

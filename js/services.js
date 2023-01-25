@@ -1,5 +1,4 @@
 const tabbedItemsContainerClass = ".tabbed-items-container";
-// const tabLabelContainerClass = ".tab-label-container";
 const tabLabelClass = ".tab-label";
 const tabContentClass = ".tab-content";
 const contentId = "label";
