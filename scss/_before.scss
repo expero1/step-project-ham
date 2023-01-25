@@ -20,7 +20,7 @@
 
 body {
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-
+  /*overflow: hidden;*/
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
   // width: $temporary-wrapper-width;
   // margin: 0 auto;
@@ -124,14 +124,127 @@ body {
   width: 30px;
   display: block;
 }
-
-.load-spinner {
-  display: none;
-  background: url("../image/loader/loader.svg") center / cover no-repeat;
-  margin: 20px auto;
-  width: 60px;
-  aspect-ratio: 1;
+/* spinner */
+@keyframes spinner {
+  0% {
+    opacity: 1;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1, 1);
+  }
 }
+.load-spinner {
+  width: 78px;
+  height: 78px;
+  // display: inline-block;
+  display: none;
+  overflow: hidden;
+  background: transparent;
+  margin: 0 auto;
+}
+.spinner-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.78);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.spinner-wrapper div {
+  box-sizing: content-box;
+}
+.spinner-wrapper div > div {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #18cfab;
+  animation: spinner 1s linear infinite;
+}
+.spinner-wrapper div:nth-child(1) > div {
+  left: 74px;
+  top: 44px;
+  animation-delay: -0.875s;
+}
+.spinner-wrapper > div:nth-child(1) {
+  transform: rotate(0deg);
+  transform-origin: 80px 50px;
+}
+.spinner-wrapper div:nth-child(2) > div {
+  left: 65px;
+  top: 65px;
+  animation-delay: -0.75s;
+}
+.spinner-wrapper > div:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: 71px 71px;
+}
+.spinner-wrapper div:nth-child(3) > div {
+  left: 44px;
+  top: 74px;
+  animation-delay: -0.625s;
+}
+.spinner-wrapper > div:nth-child(3) {
+  transform: rotate(90deg);
+  transform-origin: 50px 80px;
+}
+.spinner-wrapper div:nth-child(4) > div {
+  left: 23px;
+  top: 65px;
+  animation-delay: -0.5s;
+}
+.spinner-wrapper > div:nth-child(4) {
+  transform: rotate(135deg);
+  transform-origin: 29px 71px;
+}
+.spinner-wrapper div:nth-child(5) > div {
+  left: 14px;
+  top: 44px;
+  animation-delay: -0.375s;
+}
+.spinner-wrapper > div:nth-child(5) {
+  transform: rotate(180deg);
+  transform-origin: 20px 50px;
+}
+.spinner-wrapper div:nth-child(6) > div {
+  left: 23px;
+  top: 23px;
+  animation-delay: -0.25s;
+}
+.spinner-wrapper > div:nth-child(6) {
+  transform: rotate(225deg);
+  transform-origin: 29px 29px;
+}
+.spinner-wrapper div:nth-child(7) > div {
+  left: 44px;
+  top: 14px;
+  animation-delay: -0.125s;
+}
+.spinner-wrapper > div:nth-child(7) {
+  transform: rotate(270deg);
+  transform-origin: 50px 20px;
+}
+.spinner-wrapper div:nth-child(8) > div {
+  left: 65px;
+  top: 23px;
+  animation-delay: 0s;
+}
+.spinner-wrapper > div:nth-child(8) {
+  transform: rotate(315deg);
+  transform-origin: 71px 29px;
+}
+
+// .load-spinner {
+//   display: none;
+//   background: url("../image/loader/loader.svg") center / cover no-repeat;
+//   margin: 20px auto;
+//   width: 60px;
+//   aspect-ratio: 1;
+// }
 .delimiter {
   &:after {
     @include horizontal-delimiter("|", 4px, 4px);
