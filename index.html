@@ -23,24 +23,25 @@
         <span class="logo-image">h</span><span class="normal-font-weight">the</span><span
           class="main-highlight-color">Ham</span>
       </a>
-
-      <ul class="header-menu">
-        <li class="header-menu__item"><a class="header-menu__link" href="#">home</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">About</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">Blog</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">Skills</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">Service</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">Work</a></li>
-        <li class="header-menu__item"><a class="header-menu__link" href="#">Testimonial</a></li>
-        <li class="header-menu__item search"><a href="#"><img class="search-icon"
-              src="./image/icon/magnifying-glass-solid.svg" alt="Search Our Site"></a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="header-menu">
+          <li class="header-menu__item"><a class="header-menu__link" href="#">home</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">About</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Blog</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Skills</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Service</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Work</a></li>
+          <li class="header-menu__item"><a class="header-menu__link" href="#">Testimonial</a></li>
+          <li class="header-menu__item search"><a href="#"><img class="search-icon"
+                src="./image/icon/magnifying-glass-solid.svg" alt="Search Our Site"></a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <div class="hero-section">
+    <section class="hero-section">
       <div class="wrapper">
         <h2 class="hero-header"><span class="main-color">The Ham is</span> Wordpress theme</h2>
         <h3 class="hero-subheader">we are creative</h3>
@@ -50,28 +51,31 @@
           <button class="btn shadow-btn alternate-btn hero-btn">purchase now</button>
         </span>
       </div>
-    </div>
-    <ul class="properties-section">
-      <li class="properties-item">
-        <img class="properties-item__icon" src="./image/properties/finger-touch-icon.svg"
-          alt="Different theme option" />
-        <h3 class="properties-item__description">Different theme option</h3>
-      </li>
-      <li class="properties-item">
-        <img class="properties-item__icon" src="./image/properties/diamond-icon.svg" alt="fully customizable" />
-        <h3 class="properties-item__description">fully customizable</h3>
-      </li>
-      <li class="properties-item">
-        <img class="properties-item__icon" src="./image/properties/bulb.svg" alt="unlimited support">
-        <h3 class="properties-item__description">unlimited support</h3>
-      </li>
-      <li class="properties-item">
-        <img class="properties-item__icon" src="./image/properties/devices.svg" alt="responsive all device">
-        <h3 class="properties-item__description">responsive all device</h3>
-      </li>
-    </ul>
+    </section>
+    <section>
+      <ul class="properties-section">
+        <li class="properties-item">
+          <img class="properties-item__icon" src="./image/properties/finger-touch-icon.svg"
+            alt="Different theme option" />
+          <h3 class="properties-item__description">Different theme option</h3>
+        </li>
+        <li class="properties-item">
+          <img class="properties-item__icon" src="./image/properties/diamond-icon.svg" alt="fully customizable" />
+          <h3 class="properties-item__description">fully customizable</h3>
+        </li>
+        <li class="properties-item">
+          <img class="properties-item__icon" src="./image/properties/bulb.svg" alt="unlimited support">
+          <h3 class="properties-item__description">unlimited support</h3>
+        </li>
+        <li class="properties-item">
+          <img class="properties-item__icon" src="./image/properties/devices.svg" alt="responsive all device">
+          <h3 class="properties-item__description">responsive all device</h3>
+        </li>
+      </ul>
+    </section>
 
-    <div class="services-section wrapper tabbed-items-container">
+
+    <section class="services-section wrapper tabbed-items-container">
       <h2 class="services-header section-header">Our Services</h2>
       <ul class="tab-label-container">
         <li class="tab-label active" data-label="web-design">
@@ -166,9 +170,9 @@
           assumenda dignissimos commodi!
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="purchase-section">
+    <section class="purchase-section">
       <div class="wrapper">
         <h2 class="purchase-header">Everything is ready. just buy and install now</h2>
         <p class="purchase-content">
@@ -177,9 +181,9 @@
         </p>
         <button class="btn shadow-btn action-btn purchase-btn">purchase now</button>
       </div>
-    </div>
+    </section>
 
-    <div class="work-section">
+    <section class="work-section">
       <div class="wrapper">
         <h3 class="section-header work-section-header">Our Amazing Work</h3>
         <ul class="work-menu__container">
@@ -231,18 +235,18 @@
       <button class="btn action-btn load-more-btn">
         Load More
       </button>
-    </div>
+    </section>
 
     <!-- NEWS -->
-    <div class="news-section wrapper">
+    <section class="news-section wrapper">
       <h2 class="section-header news-section-header">Breaking News</h2>
       <div class="news-container">
         <div class="news-item">
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-1.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -254,8 +258,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-2.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -267,8 +271,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-3.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -280,8 +284,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-4.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -293,8 +297,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-5.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -306,8 +310,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-6.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -319,8 +323,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-7.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -332,8 +336,8 @@
           <a class="news-item__link" href="#">
             <img class="news-item__image" src="./image/news/news-8.jpg" alt="Amazing Blog Post" />
             <h3 class="news-item__header">Amazing Blog Post</h3>
-            <div class="news-item__publication-date">12<div class="news-item__month">feb</div>
-            </div>
+            <time class="news-item__publication-date" datetime="2022-02-12">12<span class="news-item__month">feb</span>
+            </time>
             <div>
               <span class="news-item__author">By admin</span><span class="delimiter"></span><span
                 class="news-item__comment-count">2
@@ -342,8 +346,8 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="clients-section">
+    </section>
+    <section class="clients-section">
       <div class="wrapper clients-section__wrapper ">
         <h2 class="section-header clients-section__header">What People Say About theHam</h2>
         <div class="clients-tab">
@@ -357,7 +361,7 @@
           <button class="slider-btn next-btn"></button>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="copy">© Copyright 2015 <a href="#">theHam</a><span class="delimiter"></span>All Rights Reserved</div>

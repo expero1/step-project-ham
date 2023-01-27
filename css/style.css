@@ -843,6 +843,10 @@ header {
   padding: 10px 0;
 }
 
+.news-item__month {
+  display: block;
+}
+
 .news-item__image {
   object-fit: cover;
   width: 263px;
