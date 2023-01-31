@@ -15,6 +15,6 @@ export const addImagesToPage = (images) => {
   });
 };
 
-const scrollItemContainer = () => {
+export const scrollItemContainer = () => {
   workItemContainer.style.maxHeight = workItemContainer.scrollHeight + "px";
 };
