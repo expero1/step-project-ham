@@ -474,9 +474,6 @@ header {
   border: 1.5px solid #18cfab;
   z-index: 1;
 }
-.tab-label:nth-child(1) {
-  border-left: #edefef;
-}
 
 .tab-content__container {
   height: 200px;

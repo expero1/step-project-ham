@@ -66,9 +66,6 @@
     border: 1.5px solid $accent-color;
     z-index: 1;
   }
-  &:nth-child(1) {
-    border-left: #edefef;
-  }
 }
 .tab-content__container {
   height: 200px;
