@@ -11,10 +11,10 @@ export const addImagesToPage = (images) => {
       image.description
     );
     workItemContainer.insertAdjacentHTML("beforeend", workItem);
-    scrollItemContainer();
   });
+  setMaxHeightOfWorkItemContainer();
 };
 
-export const scrollItemContainer = () => {
+export const setMaxHeightOfWorkItemContainer = () => {
   workItemContainer.style.maxHeight = workItemContainer.scrollHeight + "px";
 };

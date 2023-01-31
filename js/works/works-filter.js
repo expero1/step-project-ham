@@ -1,4 +1,4 @@
-import { scrollItemContainer } from "./works-add-to-page.js";
+import { setMaxHeightOfWorkItemContainer } from "./works-add-to-page.js";
 import {
   workItems,
   workMenuItems,
@@ -24,7 +24,7 @@ const worksFilter = (event) => {
   if (!currentMenuItem) return;
   currentFilter = currentMenuItem.dataset.filter;
   filterWorkItems(currentFilter);
-  scrollItemContainer();
+  setMaxHeightOfWorkItemContainer();
   Array.from(workMenuItems).forEach((menuItem) => {
     const menuLink = menuItem.querySelector(`.${WORK_MENU_LINK_CLASS_NAME}`);
     if (menuItem === currentMenuItem) {
