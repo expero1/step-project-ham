@@ -9,8 +9,8 @@
 
 .tab-label-container {
   display: flex;
-  margin: 0 0 10px 0;
-  padding: 0 0 0 10px;
+  margin: 0;
+  padding: 0 0 24px 10px;
   line-height: 69px;
 }
 .tab-label {
@@ -83,7 +83,11 @@
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 10px;
-
+  p,
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
   &.active {
     display: block;
   }
@@ -91,6 +95,9 @@
 
 .tab-content__image {
   float: left;
+  width: 194px;
+  height: 139px;
+  object-fit: cover;
   margin-right: 15px;
   margin-bottom: 15px;
 }
