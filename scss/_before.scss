@@ -20,6 +20,8 @@
 
 body {
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  min-width: 1200px;
+  width: 1920px;
   /*overflow: hidden;*/
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
   // width: $temporary-wrapper-width;

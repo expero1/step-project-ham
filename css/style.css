@@ -1,6 +1,8 @@
 /* common properties (_before.scss)*/
 body {
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  min-width: 1200px;
+  width: 1920px;
   /*overflow: hidden;*/
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
   /* **** DEVELOP, REMOVE IN PRODUCTION*/
@@ -352,6 +354,7 @@ header {
   font-size: 34px;
   font-weight: 400;
   text-transform: capitalize;
+  color: #d4d4d4;
 }
 .hero-section .hero-btn {
   height: 60px;
@@ -497,8 +500,8 @@ header {
 
 .tab-content__image {
   float: left;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .purchase-section {
