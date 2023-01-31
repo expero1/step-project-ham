@@ -26,13 +26,13 @@
 .work-menu__link {
   $border-width: 1px;
   $side-padding: 17px;
-  $padding-top: 20px;
+  $padding-top: 20.5px;
   $padding-bottom: $padding-top;
   min-width: 75px;
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  border: $border-width solid gray;
+  border: $border-width solid #dadada;
   margin-right: -$border-width;
   border-collapse: collapse;
   padding: $padding-top $side-padding $padding-bottom $side-padding;

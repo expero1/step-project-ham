@@ -704,17 +704,17 @@ header {
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  border: 1px solid gray;
+  border: 1px solid #dadada;
   margin-right: -1px;
   border-collapse: collapse;
-  padding: 20px 17px 20px 17px;
+  padding: 20.5px 17px 20.5px 17px;
   font-size: 14px;
   color: #717171;
   transition: color 0.5s, border-color 0.1s;
 }
 .work-menu__link:hover, .work-menu__link.active {
   position: relative;
-  padding: 19px 16px 19px 16px;
+  padding: 19.5px 16px 19.5px 16px;
   border: 2px solid #18cfab;
   z-index: 1;
   color: #18cfab;
