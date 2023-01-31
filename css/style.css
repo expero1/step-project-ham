@@ -1,11 +1,10 @@
 /* common properties (_before.scss)*/
+html {
+  min-width: 1200px;
+}
+
 body {
   font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
-  min-width: 1200px;
-  width: 1920px;
-  /*overflow: hidden;*/
-  /* **** DEVELOP, REMOVE IN PRODUCTION*/
-  /* **** DEVELOP, REMOVE IN PRODUCTION*/
   color: #fff;
 }
 
@@ -731,7 +730,7 @@ header {
   margin-bottom: 72px;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 2s;
+  transition: max-height 2s, height 2s;
 }
 
 .work-item {
