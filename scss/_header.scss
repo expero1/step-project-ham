@@ -53,6 +53,7 @@ header {
 .header-menu__link {
   text-decoration: none;
   color: $main-color;
+  opacity: 0.6;
   &:active {
     color: $accent-color;
   }

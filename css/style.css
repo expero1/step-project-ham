@@ -307,6 +307,7 @@ header {
 .header-menu__link {
   text-decoration: none;
   color: #fff;
+  opacity: 0.6;
 }
 .header-menu__link:active {
   color: #18cfab;
