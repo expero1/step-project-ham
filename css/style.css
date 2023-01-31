@@ -840,11 +840,11 @@ header {
   text-align: center;
   background-color: #203e38;
   color: #fff;
-  line-height: 24px;
+  line-height: 25px;
   cursor: pointer;
   text-transform: capitalize;
   transition: background-color 0.5s;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .news-item__month {
@@ -860,7 +860,7 @@ header {
 
 .news-item__header {
   margin: 0;
-  padding: 14px 0 10px 21px;
+  padding: 13px 0 9px 21px;
   font-size: 18px;
   text-transform: capitalize;
   transition: color 0.5s;
@@ -873,7 +873,7 @@ header {
 }
 
 .news-item__author {
-  padding-left: 18px;
+  padding-left: 17px;
   padding-right: 10px;
 }
 
