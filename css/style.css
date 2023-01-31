@@ -805,7 +805,7 @@ header {
 }
 
 .news-section-header {
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .news-container {
@@ -892,6 +892,7 @@ footer {
   padding-bottom: 52px;
   font-size: 14px;
   font-weight: 300;
+  color: #aeaeae;
 }
 .copy a {
   color: #18cfab;
